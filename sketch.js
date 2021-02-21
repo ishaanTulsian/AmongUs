@@ -5,9 +5,8 @@ function preload(){
 }
 function setup() {
   createCanvas(1200,800);
-  fixedRect = createSprite(400, 100, 50, 80);
-  fixedRect.shapeColor = "green";
-  fixedRect.addImage(onlineImg);
+  fixedRect = createSprite(400, 100);
+  fixedRect.addImage(Character.png);
 }
 
 function draw() {
