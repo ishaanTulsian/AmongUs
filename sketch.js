@@ -1,15 +1,15 @@
-var fixedRect, movingRect, onlineImg;
+var fixedRect, AmongUs, onlineImg, characterImg, AmongUsImg, form;
 
-function preload(){
-  onlineImg = loadImage('Assets/InteractiveStuff/onlineImg.png')
-}
-function setup() {
-  createCanvas(1200,800);
-  fixedRect = createSprite(400, 100);
-  fixedRect.addImage(Character.png);
-}
-
-function draw() {
-  background(0,0,0);  
-  drawSprites();
-}
+function preload(){ 
+  onlineImg = loadImage('Online.png'); 
+  characterImg = loadImage('Character.png');
+  AmongUsImg = loadImage('AMONGUS.png')
+} 
+  function setup() { 
+    createCanvas(displayWidth, displayHeight);  
+    form = new Form();
+  } 
+  function draw() { 
+    background('black'); 
+    drawSprites(); 
+  }
